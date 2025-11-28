@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npm install",
+  "devCommand": "npm start",
+  "installCommand": "npm install",
+  "framework": "express",
+  "outputDirectory": "./api",
+  "functions": {
+    "api/**/*.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "JWT_SECRET": "tre-ai-secret-key-2024"
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
+      ]
+    }
+  ]
+}
