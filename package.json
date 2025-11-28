@@ -1,0 +1,19 @@
+{
+  "name": "tre-ai-5-backend",
+  "version": "1.0.0",
+  "description": "Backend API for TRE-AI 5.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["api", "auth", "treai"],
+  "author": "Tretech Media",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "jwt-simple": "^0.5.6",
+    "uuid": "^9.0.0"
+  }
+}
